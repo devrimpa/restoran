@@ -15,7 +15,7 @@ h1 {
 }
 
 h3 {
-    font-size: 2.5rem;
+    font-size: 40px;
     margin-bottom: 20px;
     font-weight: 800;
     line-height: 1.2;
@@ -26,7 +26,7 @@ h4 {
     margin-top: 0;
     margin-bottom: .5rem;
     text-transform: capitalize;
-    font-size: 1.25rem;
+    font-size: 20px;
     font-weight: 800;
     line-height: 1.2;
     color: #0F172B;
@@ -1239,22 +1239,59 @@ textarea {
         width: 228px;
     }
 
-    .nav-tabs .nav-link i,
-    .nav-tabs .nav-link img {
+    .nav-tabs .nav-link i {
         margin-right: 15px;
     }
 
+
     .nav-tabs .nav-link.active,
     .nav-tabs .nav-link {
-        margin-right: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 53px;
     }
+
+    .nav-tabs .nav-link i {
+        width: 100%;
+    }
+
+    .nav-tabs .nav-link img {
+        margin-right: 0;
+    }
+
+    .menu-sec-content h5::before {
+        right: -51px;
+        width: 36px;
+    }
+
+    .menu-sec-content h5::after {
+        left: -51px;
+        width: 36px;
+    }
+
 
     .copyright-sec p {
         font-size: 16px;
     }
 }
 
-@media(max-width: 320px){
+@media(max-width: 320px) {
+    h3 {
+        font-size: 32px;
+    }
+
     .button-inner {
-        font-size: 12px;}
+        font-size: 12px;
+    }
+
+    .nav-tabs .nav-link.active,
+    .nav-tabs .nav-link {
+        margin-right: 45px;
+    }
+
+    .menu-list .nav-link:last-child {
+        margin-right: 0;
+    }
 }
